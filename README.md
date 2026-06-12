@@ -5,15 +5,15 @@
 
 ---
 
-## 🔗 Links
+## Links
 
 | | |
 |---|---|
-| 🌐 **Live Demo** | [shopzone-ashy.vercel.app](https://shopzone-ashy.vercel.app) |
-| 📁 **Repository** | [github.com/ashish-bisht-iot/shopzone](https://github.com/ashish-bisht-iot/shopzone) |
+| **Live Demo** | [shopzone-ashy.vercel.app](https://shopzone-ashy.vercel.app) |
+| **Repository** | [github.com/ashish-bisht-iot/shopzone](https://github.com/ashish-bisht-iot/shopzone) |
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home Page
 ![Home Page](./screenshots/home.png)
@@ -35,33 +35,7 @@
 
 ---
 
-## ✨ Features
-
-### Core (Sprint Requirements)
-- ✅ **Client-side routing** — URL changes without any page reload
-- ✅ **Dynamic routes** — `/product/:id` via `useParams()` hook
-- ✅ **Global cart state** — `CartContext` + `useReducer`, no Redux
-- ✅ **Live cart badge** — updates instantly across all routes
-- ✅ **Duplicate prevention** — re-adding an item increments quantity
-- ✅ **localStorage persistence** — cart survives hard browser refresh
-- ✅ **Mock authentication** — email/password or guest login
-- ✅ **Protected route** — `/checkout` redirects to `/login` if not authenticated
-- ✅ **Quantity controls** — increment, decrement, remove items
-- ✅ **Order summary** — subtotal, shipping, tax, and total calculation
-
-### UI & Design
-- 🌙 **Dark / Light theme toggle** — forest green dark mode, soft white light mode
-- 🎨 **Premium aesthetic** — deep forest green palette, cream text, soft glow effects
-- 💫 **Animations** — floating hero cards, fade-in sections, hover lift effects
-- 🏷️ **Product badges** — NEW, TRENDING, SALE, LIMITED
-- ❤️ **Wishlist** — toggle heart on product cards
-- ⚡ **Quick Add** — add to cart directly from product grid
-- 🔍 **Category filters** — filter by Beauty, Fashion, Tech, Watches, Footwear, Jewellery
-- 📱 **Responsive** — works on mobile, tablet, and desktop
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -75,7 +49,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 shopzone/
@@ -104,7 +78,7 @@ shopzone/
 
 ---
 
-## 🗺️ Routes
+## Routes
 
 | Path | Page | Protected |
 |---|---|---|
@@ -114,11 +88,11 @@ shopzone/
 | `/cart` | Shopping cart | No |
 | `/contact` | Contact form | No |
 | `/login` | Login / Guest auth | No |
-| `/checkout` | Checkout | ✅ Yes — redirects to `/login` |
+| `/checkout` | Checkout | Yes — redirects to `/login` |
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -148,7 +122,7 @@ npm run build
 
 ---
 
-## ☁️ Deployment (Vercel)
+## Deployment (Vercel)
 
 The `vercel.json` file at the root handles SPA routing — without it, refreshing any route like `/product/5` returns a 404.
 
@@ -172,7 +146,7 @@ Or connect your GitHub repo directly on [vercel.com](https://vercel.com) for aut
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### Client-Side Routing
 React Router v6 handles all navigation. The `<BrowserRouter>` wraps the entire app, and `<Routes>` + `<Route>` define the page tree. `<Link>` and `useNavigate()` are used for navigation — never `<a href>` tags, which would trigger a full page reload and clear the cart.
@@ -188,7 +162,7 @@ Theme is stored in `localStorage` and applied as a `data-theme` attribute on `<h
 
 ---
 
-## 📝 API
+## API
 
 Data sourced from [DummyJSON](https://dummyjson.com) — a free REST API for fake product data.
 
@@ -200,8 +174,6 @@ Data sourced from [DummyJSON](https://dummyjson.com) — a free REST API for fak
 
 ---
 
-## 🤖 AI Usage
+## AI Usage
 
 See [Prompts.md](./Prompts.md) for the full log of AI-assisted debugging sessions during development.
-
----
