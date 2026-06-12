@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| 🌐 **Live Demo** | [shopzone.vercel.app](https://shopzone.vercel.app) *(update after deploy)* |
+| 🌐 **Live Demo** | [shopzone-ashy.vercel.app](https://shopzone-ashy.vercel.app) |
 | 📁 **Repository** | [github.com/ashish-bisht-iot/shopzone](https://github.com/ashish-bisht-iot/shopzone) |
 ---
 
