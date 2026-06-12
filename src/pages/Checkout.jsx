@@ -11,10 +11,11 @@ export default function Checkout() {
   const total    = (totalPrice + shipping + tax).toFixed(2)
 
   function handlePlaceOrder() {
-    dispatch({ type: 'CLEAR_CART' })
-    alert(`🎉 Order placed! Total charged: ₹{total}`)
-    navigate('/')
-  }
+  const finalTotal = (totalPrice + (totalPrice > 100 ? 0 : 9.99) + totalPrice * 0.08).toFixed(2)
+  dispatch({ type: 'CLEAR_CART' })
+  alert(`🎉 Order placed! Total charged: ₹${finalTotal}`)
+  navigate('/')
+}
 
   return (
     <div className="page page-enter">
