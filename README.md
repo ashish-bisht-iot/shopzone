@@ -1,6 +1,5 @@
 # ShopZone
-
-> A modern, fully responsive E-Commerce Single Page Application built with React, Vite, and React Router v6. Features global cart state, mock authentication, protected routes, dark/light theme toggle, and a premium forest-green design aesthetic.
+A modern, fully responsive E-Commerce Single Page Application built with React, Vite, and React Router v6. Features global cart state, mock authentication, protected routes, dark/light theme toggle, and a premium forest-green design aesthetic.
 
 ![ShopZone Banner](./screenshots/hero.png)
 
