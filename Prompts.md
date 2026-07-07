@@ -1,4 +1,4 @@
-# Prompts.md — ShopZone SPA
+# Prompts.md — ShopZone
 
 This file documents my AI-assisted debugging sessions during this project.
 
