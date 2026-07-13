@@ -63,12 +63,3 @@ The `useEffect` that fetches product data needs `[id]` in its dependency array, 
 React Router's `<NavLink>` component accepts a `className` prop as a function: `className={({ isActive }) => isActive ? 'active' : ''}`. For the home route `/`, I need to add the `end` prop to prevent it from matching all routes that start with `/`.
 
 ---
-
-## Session 07 — localStorage Hydration Causing Stale State
-**Prompt:**
-> "I'm reading from localStorage in my initialState but after clearing the cart, on next refresh the old cart data still loads. The localStorage key isn't being cleared properly."
-
-**Insight Gained:**
-The `CLEAR_CART` reducer was updating React state correctly, but I forgot to add a `useEffect` that syncs the cart to `localStorage` whenever `state.cartItems` changes. Once I added `localStorage.setItem('shopzone_cart', JSON.stringify(state.cartItems))` inside a `useEffect([state.cartItems])`, the persistence worked correctly in both directions.
-
----
